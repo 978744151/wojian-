@@ -1,0 +1,134 @@
+
+html,body{
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  background-color: white;
+}
+.container1{
+  width: 100%;
+  height: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-bottom: 55px;
+  background-color: white;
+}
+.header {
+  height: 45px;
+  width: 100%;
+  background: rgba(250,250,250,0.90);
+  position: fixed;
+  top: 0;
+  max-width: 750px;
+  z-index: 999;
+  display: flex;
+  h4{
+    width: 100%;
+    height: 45px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    line-height: 45px;
+    margin: 0;
+  }
+  .addsite{
+    color: black;
+    font-size:14px;
+    word-break:keep-all;
+    line-height:45px;
+    margin-right:10px;
+  }
+}
+.lt_footer {
+  height: 55px;
+  width: 100%;
+  background: rgba(250,250,250,0.90);
+  position: fixed;
+  bottom: 0;
+  max-width: 750px;
+  z-index: 999;
+}
+.lt_footer li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.lt_footer li.now{
+  color: darkorange;
+}
+
+.lt_footer li.now p {
+  color: darkorange;
+}
+
+
+.lt_footer a {
+  color: black;
+}
+
+.lt_footer p {
+  color: black;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+#load{
+  position: absolute;
+  top: 40%;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: none;
+  z-index: 99999;
+}
+.indexiframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#loader{
+  position: absolute;
+  left:50%;
+  top:50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 999;
+}
+@import "index";
+@import "category";
+@import "cart";
+@import "search";
+@import "product";
+@import "searchlist";
+@import "site";
+@import "user";
+@import "querysite";
+@import "collect";
+@import "white_order";
+@import "order_pay";
+@import "order_statu";
+@import "express";
+@import "order_info";
+@import "comment";

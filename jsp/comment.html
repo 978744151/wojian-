@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/marge.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <span class='mui-icon mui-icon-back' style='margin-top: 10px;' onclick='window.history.back(-1)'></span>
+        <h4>待评价</h4>
+        <span class='comment_commit'>提交</span>
+    </div>
+    <div class='comment_content'>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div  class="mui-table-view">
+                    <div class="mui-table-view-cell mui-media">
+                            <img class="mui-media-object mui-pull-left com_pic" src="../images/zhifubao.png">
+                            <div class="mui-media-body">
+                                <span class='com_name'>幸福</span>
+                                <p class='mui-ellipsis'>商品评分 <div class='raty'></div>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <form>
+                    <textarea name="" id="" cols="20" rows="5" class='text_content'>
+
+                    </textarea>
+                    <!--<button type="button" class="layui-btn" id="test1">-->
+                        <!--<i class="layui-icon">&#xe67c;</i>上传图片-->
+                    <!--</button>-->
+
+                    <input type="file" class="btn btn-default" id="fileupload" multiple>
+
+
+                    <!--<div class="fileupload_box">-->
+                        <!--<input type="file" class="btn btn-default" id="fileupload" multiple>-->
+                        <!--<input type="hidden" name="hot">-->
+                        <!--<span class="btn btn-default">上传图片</span>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-group img_box">-->
+                        <!--<img src="" class="upfileimg" width="200" height="200" alt="" >-->
+                    <!--</div>-->
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!--<div class="lt_footer">-->
+        <!--<ul>-->
+            <!--<li class="now">-->
+                <!--<a href="index.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>首页</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="category.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>分类</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="cart.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>购物车</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="user.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>会员中心</p>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src='../js/exif.js'></script>
+<script src="../lib/layui/layui.js"></script>
+
+<script src="../lib/jquery-fileupload/jquery.ui.widget.js"></script>
+<script src="../lib/jquery-fileupload/jquery.iframe-transport.js"></script>
+<script src="../lib/jquery-fileupload/jquery.fileupload.js"></script>
+<script src='../lib/raty/lib/jquery.raty.min.js'></script>
+<script src="../js/fastclick.js"></script>
+<script src="../lib/artTemplate/template-web.js"></script>
+<script src="../js/comment.js"></script>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/marge.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container1">
+    <div class='user_content'>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll add_content">
+                <div class='user_header'>
+                    <div style='display: flex'>
+                        <img src="" alt="" class="user_img">
+                        <span class='username'></span>
+                    </div>
+                    <!--<span class='user_info'>个人信息-->
+                        <!--<span class='mui-icon mui-icon-arrowright'style='margin-right: 5px;color: #999999'></span>-->
+                    <!--</span>-->
+                </div>
+                <div class='user_order' onclick="window.top.location = 'order_state.html'">
+                    <span>我的订单</span>
+                    <span class='mui-icon mui-icon-arrowright' style='margin-right: 5px;color: #999999;line-height: 40px;'></span>
+                </div>
+                <div class='order_list' >
+                    <div onclick="window.top.location = 'loadpay.html'">
+                        <div style="width: 100%">
+                            <img src="../images/1@2x.png" alt="" width="50px" height="50px;" style="text-align: center">
+                        </div>
+                        <span>待付款</span>
+                    </div>
+                    <div onclick="window.top.location = 'send_goods.html'">
+                        <div style="width: 100%">
+                            <img src="../images/2@2x.png" alt="" width="50px" height="50px;" style="text-align: center">
+                        </div>
+                        <span>待发货</span>
+                    </div>
+                    <div onclick="window.top.location = 'yetgoods.html'">
+                        <div style="width: 100%">
+                            <img src="../images/3@2x.png" alt="" width="50px" height="50px;" style="text-align: center">
+                        </div>
+                        <span>已发货</span>
+                    </div>
+                    <!--<div onclick="window.location.href = 'ordertrue.html'">-->
+                        <!--<i class="mui-icon mui-icon-list"></i>-->
+                        <!--<span>已确认</span>-->
+                    <!--</div>-->
+                    <div onclick="window.top.location = 'loadComment.html'">
+                        <div style="width: 100%">
+                            <img src="../images/4@2x.png" alt="" width="50px" height="50px;" style="text-align: center">
+                        </div>
+                        <span>待评价</span>
+                    </div>
+                    <!--<div>-->
+                        <!--<img src="../images/brand1.png" alt="">-->
+                        <!--<span>待评价</span>-->
+                    <!--</div>-->
+               <!--      <div>
+                        <i class="mui-icon mui-icon-list"></i>
+                        <span>退换/售后</span>
+                    </div> -->
+                </div>
+                <div class='user_none'></div>
+                <div class='user_config'>
+                    <a  onclick="window.top.location = 'querysite.html'" >
+                        <span>收货地址</span>
+                        <i class='mui-icon mui-icon-arrowright'></i>
+                    </a>
+                    <a  onclick="window.top.location = 'collect.html'" >
+                        <span>我的收藏</span>
+                        <i class='mui-icon mui-icon-arrowright'></i>
+                    </a>
+                    <a  onclick="window.top.location = 'history.html'" >
+                        <span>浏览记录</span>
+                        <i class='mui-icon mui-icon-arrowright'></i>
+                    </a>
+                    <!--<a>-->
+                        <!--<span>设置</span>-->
+                        <!--<i class='mui-icon mui-icon-arrowright'></i>-->
+                    <!--</a>-->
+                    <a  onclick="window.top.location = 'landing.html'" >
+                        <span>登陆</span>
+                        <i class='mui-icon mui-icon-arrowright'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="lt_footer">-->
+        <!--<ul>-->
+            <!--<li onclick="window.location.href = 'index.html'">-->
+                <!--<span class="fa fa-home"></span>-->
+                <!--<p>首页</p>-->
+            <!--</li>-->
+            <!--<li  onclick="window.location.href = 'category.html'">-->
+                <!--<span class="fa fa-bars"></span>-->
+                <!--<p>分类</p>-->
+            <!--</li>-->
+            <!--<li onclick="window.location.href = 'cart.html'">-->
+                <!--<span class="fa fa-shopping-cart"></span>-->
+                <!--<p>购物车</p>-->
+            <!--</li>-->
+            <!--<li onclick="window.location.href = 'user.html'" class="now">-->
+                <!--<span class="fa fa-user"></span>-->
+                <!--<p>会员中心</p>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/artTemplate/template-web.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+.collect_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.collect_content .lt_sort {
+  display: flex;
+  text-align: center;
+}
+.collect_content .lt_sort a {
+  flex: 1;
+  font-size: 14px;
+  color: black;
+}
+.collect_content .lt_sort .on {
+  color: red;
+}
+.collect_content .cart_left img {
+  width: 75px;
+  height: 75px;
+}
+.collect_content .cart_right {
+  padding-left: 30px;
+}

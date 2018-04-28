@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/marge.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+    <style>
+        .order_result_suc{
+            text-align: center;
+            margin-top:50px;
+        }
+        .order_result_less{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .order_result_less button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <span class='mui-icon mui-icon-back' style='margin-top: 10px;' onclick='window.history.back(-1)'></span>
+        <h4>付款结果</h4>
+    </div>
+    <div class='order_result_content'>
+        <div class="order_result_suc">
+            <h3>付款成功</h3>
+        </div>
+        <div class='order_result_less'>
+            <button onclick="window.location.href = 'order_state.html'">查看订单</button>
+            <button onclick="window.location.href = 'index.html'">回到首页</button>
+        </div>
+    </div>
+    <!--<div class="lt_footer">-->
+        <!--<ul>-->
+            <!--<li class="now">-->
+                <!--<a href="index.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>首页</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="category.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>分类</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="cart.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>购物车</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="user.html">-->
+                    <!--<span class="mui-icon mui-icon-weixin"></span>-->
+                    <!--<p>会员中心</p>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/artTemplate/template-web.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

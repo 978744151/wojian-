@@ -1,0 +1,51 @@
+.qs_content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #f2f2f2;
+  .qs_site_list{
+    background-color: white;
+    height: 66px;
+    padding: 10px 5px 10px 20px;
+    font-size: 14px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    .qs_site_left{
+      display: flex;
+      .qs_left{
+
+        p{
+          word-break:keep-all;
+          color: #000;
+        }
+      }
+    }
+    .qs_right{
+      margin-left:5%;
+      .qs_normal{
+        word-break:keep-all;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+      }
+    }
+  }
+  .qs_site_right{
+    position: absolute;
+    right: 6px;
+    top: 10px;
+      .qs_number{
+        color: #000;
+      }
+  }
+  .query_del{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 4px 5px 0px 19px;
+    background-color: #fff;
+    height: 30px;
+    line-height: 25px;
+  }
+
+}

@@ -1,0 +1,34 @@
+.site_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #F2F2F2;
+}
+.site_content #target {
+  margin: 10px;
+}
+.site_content .site input {
+  font-size: 14px;
+  border: none;
+  margin: 0;
+  height: 50px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.site_content .site_normal {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.sitesave {
+  position: absolute;
+  right: 10px;
+  line-height: 45px;
+}
+.site_true {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+}

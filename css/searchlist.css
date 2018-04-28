@@ -1,0 +1,63 @@
+.search_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.search_content .lt_sort {
+  display: flex;
+  text-align: center;
+  margin-top: 5px;
+}
+.search_content .lt_sort a {
+  flex: 1;
+  font-size: 14px;
+  color: black;
+}
+.search_content .lt_sort .on {
+  color: red;
+}
+.search_content .goods-list {
+  padding-top: 5px;
+}
+.search_content .goods-list .mui-card-content-inner .thumb_img {
+  width: 60px;
+  height: 60px;
+}
+.search_content .goods-list .mui-card-content-inner .info {
+  margin-left: 10px;
+  flex: 1;
+}
+.search_content .goods-list .mui-card-content-inner .info h4 {
+  font-size: 14px;
+}
+.search_content .goods-list .mui-card-content-inner .info .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_content .goods-list .mui-card-content-inner .info .box .price {
+  font-size: 16px;
+  color: red;
+}
+.search_content .goods-list .mui-card-content-inner {
+  display: flex;
+}
+.search_content .mui-card-content-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_content .mui-card-content-inner .amount {
+  flex: 1;
+}
+.search_content .mui-card-content-inner .red {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+.search_content .mui-card-content-inner .red {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}

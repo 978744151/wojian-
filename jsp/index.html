@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/marge.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+</head>
+<body>
+<!--<iframe>-->
+<div class="container">
+    <div class="header">
+        <div class="lt_search">
+            <i class='mui-icon mui-icon-search'></i>
+            <input type="text" class="search_text" placeholder="请输入搜索关键字">
+        </div>
+    </div>
+    <div class="Incontent" >
+        <!--<div id="loader"></div>-->
+        <div class="mui-scroll-wrapper"id="pull" >
+            <div class="mui-scroll" >
+                <!--轮播图-->
+                <div class="index_banner">
+                        <!--挖个坑-->
+                </div>
+                <!--导航-->
+                <div class="navgate">
+                    <!--挖个坑-->
+                </div>
+                <!--<div class="list">-->
+                    <!--<a>-->
+                        <!--<img src="../images/brand1.png" alt="">-->
+                        <!--<span>XX</span>-->
+                    <!--</a>-->
+                    <!--<a>-->
+                        <!--<img src="../images/brand2.png" alt="">-->
+                        <!--<span>XX</span>-->
+                    <!--</a>-->
+                    <!--<a>-->
+                        <!--<img src="../images/brand3.png" alt="">-->
+                        <!--<span>XX</span>-->
+                    <!--</a>-->
+                    <!--<a>-->
+                        <!--<img src="../images/brand4.png" alt="">-->
+                        <!--<span>XX</span>-->
+                    <!--</a>-->
+                    <!--<a>-->
+                        <!--<img src="../images/brand5.png" alt="">-->
+                        <!--<span>XX</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+
+                <!--产品列表页-->
+                <div class="goods-list" >
+                    <!--<a>-->
+                        <!--<img src="../images/brand1.png" alt="">-->
+                        <!--<span>{{v.categoryname}}</span>-->
+                    <!--</a>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!--</iframe>-->
+<script type=text/html id="tpl">
+    <div class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop banner_img">
+            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#" style="text-align: center" ><img  src="{{result.Banner[result.Banner.length-1].commoditycarousel}}"  data-id="{{result.Banner[result.Banner.length-1].barcode}}" class='in_banner' /></a></div>
+            {{each result.Banner v i}}
+            <div class="mui-slider-item index_banner"><a href="#" style="text-align: center"  ><img src="{{v.commoditycarousel}}"  data-id="{{v.barcode}}" class='in_banner' /></a></div>
+            {{/each}}
+            <div class="mui-slider-item mui-slider-item-duplicate" ><a href="#" style="text-align: center" ><img src="{{result.Banner[0].commoditycarousel}}" data-id="{{result.Banner[0].barcode}}" class='in_banner'/></a></div>
+        </div>
+        <div class="mui-slider-indicator">
+            {{each result.Banner v i}}
+            <div class="mui-indicator {{i===0?'mui-active':''}}"></div>
+            {{/each}}
+        </div>
+    </div>
+</script>
+<script type="text/html" id="tpl2">
+
+</script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/artTemplate/template-web.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    $('.search_text').on('focus', function () {
+        document.activeElement.blur();
+        window.top.location = 'search.html'
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.order_info_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.order_info_content .order_info {
+  padding: 5px 10px;
+}
+.order_info_content .order_status .exp_oder_status {
+  font-size: 16px;
+  color: red;
+}
+.order_info_content .exp_adress {
+  border-top: 10px solid #f2f2f2;
+}
+.order_info_content .exp_adress .exp_name {
+  display: flex;
+  justify-content: space-between;
+}
+.order_info_content .order_cart {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+.order_info_content .order_cart .lt_sort {
+  display: flex;
+  text-align: center;
+}
+.order_info_content .order_cart .lt_sort a {
+  flex: 1;
+  font-size: 14px;
+  color: black;
+}
+.order_info_content .order_cart .lt_sort .on {
+  color: red;
+}
+.order_info_content .cart_left {
+  width: 75px;
+  height: 75px;
+}
+.order_info_content img {
+  width: 100%;
+  height: 100%;
+}
+.order_info_content .cart_right {
+  padding-left: 30px;
+}
+.order_info_content .cart_right .white_order_price {
+  color: red;
+  font-size: 16px;
+}
+.order_info_content .cart_right .white_order_name {
+  color: black;
+  margin-top: 24px;
+}
+.order_info_content .order_num {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 14px;
+}
+.order_info_content .exp_total {
+  margin-top: 20px;
+}
+.order_info_content .exp_total p {
+  font-size: 14px;
+}
+.exp_footer {
+  height: 55px;
+  width: 100%;
+  background: rgba(250, 250, 250, 0.9);
+  position: fixed;
+  bottom: 0;
+  max-width: 750px;
+  z-index: 999;
+}
+.exp_footer .exp_order_status {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}

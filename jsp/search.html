@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/marge.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/shCircleLoader-master/jquery.shCircleLoader.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <span class='mui-icon mui-icon-back' style='margin-top: 10px;' onclick='window.history.go(-1)'></span>
+        <div class="lt_search">
+            <form target="frameFile" id="search_from">
+                <input type="text" class="search_text" placeholder="请输入搜索关键字">
+                <!--<button class='go'>go</button>-->
+                <iframe name='frameFile' style="display: none;"></iframe>
+            </form>
+        </div>
+    </div>
+    <div class="se_countent">
+
+        <div class='mui-spinner' id="load"></div>
+        <div class="sear_hot">
+            <p>热门搜索</p>
+            <div class="sear_span">
+                <span>iphone</span>
+                <span>黑人</span>
+                <span>nike</span>
+                <span>adidas</span>
+            </div>
+        </div>
+        <div class="sear_more">
+            <p>更多搜索</p>
+            <ul id="OA_task_1" class="mui-table-view">
+                <!--arr的坑-->
+            </ul>
+
+        </div>
+        <div class='sear_clear'>
+            <div id='confirmBtn' type="button" class="mui-btn mui-btn-blue mui-btn-outlined sear_clear">清除搜索记录</div>
+        </div>
+        <div id="info"></div>
+    </div>
+    <!--<div class="lt_footer">-->
+        <!--<ul>-->
+            <!--<li onclick="window.location.href = 'index.html'">-->
+                <!--<span class="fa fa-home"></span>-->
+                <!--<p>首页</p>-->
+            <!--</li>-->
+            <!--<li  onclick="window.location.href = 'category.html'">-->
+                <!--<span class="fa fa-bars"></span>-->
+                <!--<p>分类</p>-->
+            <!--</li>-->
+            <!--<li onclick="window.location.href = 'cart.html'">-->
+                <!--<span class="fa fa-shopping-cart"></span>-->
+                <!--<p>购物车</p>-->
+            <!--</li>-->
+            <!--<li onclick="window.location.href = 'user.html'">-->
+                <!--<span class="fa fa-user"></span>-->
+                <!--<p>会员中心</p>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+<script type='text/html' id="tpl">
+    {{each arr v i}}
+    <li class="mui-table-view-cell mui-transitioning mui-selected">
+        <div class="mui-slider-right mui-disabled mui-selected">
+            <a class="mui-btn mui-btn-red sear_btn" data-id={{i}}>删除</a>
+        </div>
+        <div class="mui-slider-handle">
+            <span class='sear_history' style='display: inline-block;width: 100%'>{{v}}</span>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script src="../lib/zepto/zepto.min.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/artTemplate/template-web.js"></script>
+<script src="../js/search.js">
+</script>
+</body>
+</html>

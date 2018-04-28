@@ -1,0 +1,45 @@
+.cart_content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.cart_content .goods-list {
+  padding-top: 5px;
+}
+.cart_content .goods-list .state_li {
+  position: relative;
+}
+.cart_content .goods-list .state_li .state_flex {
+  display: flex;
+}
+.cart_content .goods-list .state_li .state_flex .state_img {
+  width: 75px;
+  height: 75px;
+}
+.cart_content .goods-list .state_li .state_flex .state_img img {
+  width: 100%;
+  height: 100%;
+}
+.cart_content .goods-list .state_li .state_flex .state_right {
+  margin-left: 10px;
+}
+.cart_content .goods-list .state_li .state_flex .state_right .state_proName {
+  position: absolute;
+  bottom: 0px;
+}
+.cart_content .goods-list .state_button {
+  float: right;
+}
+.cart_content .goods-list .state_buttons {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 0px 12px;
+}
+.cart_content .goods-list .state_buttons button {
+  margin-top: 3px;
+  float: right;
+  margin-left: 10px;
+}

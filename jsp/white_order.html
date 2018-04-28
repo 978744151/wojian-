@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/marge.css">
+    <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/fa/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <span class='mui-icon mui-icon-back' style='margin-top: 10px;' onclick='history.back(-1)'></span>
+        <h4>填写订单</h4>
+    </div>
+    <div class='order_content' id='reload'>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll add_content">
+                <div class='white_order_site'>
+
+                </div>
+                <div class='white_order_list'>
+
+                </div>
+                <!--坑-->
+            </div>
+        </div>
+    </div>
+    <div class='cart_bottom'>
+        <div class="amount">
+            <!--<div style='margin-left: 10px;'>-->
+                <!--<input type="checkbox" class='foot_ck'>-->
+                <!--<span>全选</span>-->
+            <!--</div>-->
+            <!--<p class='cart_totle'>总计<span class='cart_all'></span></p>-->
+        </div>
+        <button class="cart_settle">去结算</button>
+    </div>
+
+</div>
+<div class='order_layer'>
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <div class="order_tpl2">
+            </div>
+            <!--<div class='pro_tpl3'>-->
+            <!--<p>库存</p>-->
+            <!--<span></span>-->
+            <!--</div>-->
+            <div class='order_tpl1'>
+
+            </div>
+        </div>
+    </div>
+    <div class='car_fast_button'>
+        <button class='car_fast_buy' style = "width: 100%;">添加新地址</button>
+    </div>
+</div>
+<script type="text/html" id='tpl'>
+    {{each result.goods v i}}
+    <li class="order_cart" data-id ="{{v.barcode}}">
+        <div class="mui-slider-handle collect_li">
+            <div class="mui-table-cell">
+                <div class="cart_left">
+                    <img src="{{v.commoditypic}}" alt="">
+                </div>
+                <div class="cart_right">
+                    <p class="mui-ellipsis-2 white_order_price">&yen;{{v.goodsprice}}</p>
+                    <p class="white_order_name">
+                        <span class="price">{{v.commodityname}}</span>
+                        <span class="size">{{v.speckeyname}}</span>
+                    </p>
+                </div>
+            </div>
+            <span class='order_num'>X{{v.goodsnum}}</span>
+        </div>
+    </li>
+    {{/each}}
+    <div class='order_text'>
+        <span>买家留言:</span>
+        <input type="text" placeholder="选填：填写内容" class='pay_text'>
+    </div>
+    <div class= 'white_order_total'>
+        <div class='order_list_border'>
+            <p style='color: black'>商品合计</p>
+            <p style='color: red;font-size: 16px;'>${{checked_price}}</p>
+        </div>
+        <div class='order_list_border'>
+            <!--<p>运费</p>-->
+            <!--<p>6元</p>-->
+        </div>
+    </div>
+</script>
+<script type='text/html' id='tpl1'>
+    <p class='cart_totle'>总计:&nbsp;<span class='cart_all' style='color: red;font-size: 16px;'>{{checked_price}}</span></p>
+</script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/artTemplate/template-web.js"></script>
+<script src="../js/common.js"></script>
+<script src='../js/white_order.js'></script>
+<script>
+
+</script>
+</body>
+</html>
